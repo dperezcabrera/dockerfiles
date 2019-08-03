@@ -1,5 +1,5 @@
 FROM busybox:latest AS builder
-MAINTAINER David Perez Cabrera, dperezcabrera@gmail.com
+LABEL maintainer="dperezcabrera@gmail.com"
 
 ENV JASYPT_VERSION "1.9.3"
 
