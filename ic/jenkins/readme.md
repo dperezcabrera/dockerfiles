@@ -1,20 +1,22 @@
+# Jenkins 
+
 [See official repo](https://github.com/jenkinsci/jenkins)
 
-### BUILD
+## BUILD
 ```
-    docker build -t <image-name:version> .
+docker build -t <image-name:version> .
 ```
 
 or with custom version
 
 ```
-    docker build -t <image-name:version> --build-arg JENKINS_VERSION=alpine .
+docker build -t <image-name:version> --build-arg JENKINS_VERSION=alpine .
 ```
 
 
-### EXECUTE
+## EXECUTE
 ```
-    docker run --rm -it \
+docker run --rm -it \
         --name jenkins-alpine \
         --publish 8080=8080 \
         --publish 50000=50000 \
