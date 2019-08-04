@@ -7,7 +7,7 @@
 docker build -t <image-name:version> .
 ```
 
-or with custom version
+custom jenkins version:
 
 ```
 docker build -t <image-name:version> --build-arg JENKINS_VERSION=alpine .
