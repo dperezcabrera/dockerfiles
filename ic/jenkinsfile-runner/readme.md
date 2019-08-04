@@ -19,7 +19,7 @@ docker build -t <image-name:version> --build-arg JENKINS_VERSION=alpine .
 docker run --rm \
 	--volume $PWD/Jenkinsfile-example:/workspace/Jenkinsfile \
 	<image-name:version> \
-	-a "param1=Hello&param2=value2"
+	-a "param1=Hello" -a "param2=value2"
 ```
 
 with docker:
