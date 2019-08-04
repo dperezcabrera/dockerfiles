@@ -1,4 +1,6 @@
-FROM jenkins/jenkins:alpine
+ARG JENKINS_VERSION=alpine
+
+FROM jenkins/jenkins:${JENKINS_VERSION}
 LABEL maintainer="dperezcabrera@gmail.com"
 
 USER root
