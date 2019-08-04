@@ -22,12 +22,12 @@ RUN unzip jenkinsfile-runner-$JENKINSFILE_RUNNER_VERSION-app.zip -d app \
 
 FROM openjdk:8-jdk-alpine
 
-RUN apk update && apk upgrade && apk add --no-cache docker
+RUN apk update && apk upgrade && apk add --no-cache docker git
 
 COPY --from=builder /jenkins-war /jenkins-war
 COPY --from=builder /app /app
 COPY --from=builder /usr/share/jenkins/ref/plugins /usr/share/jenkins/ref/plugins
-COPY Jenkinsfile /workspace/Jenkinsfile
+COPY Jenkinsfile-example /workspace/Jenkinsfile
 
 ENTRYPOINT ["/app/bin/jenkinsfile-runner", \
             "--jenkins-war", "/jenkins-war", \
