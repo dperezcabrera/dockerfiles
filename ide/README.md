@@ -7,5 +7,9 @@ docker run -p 5050:5050 -e USERNAME="developer" -e PASSWORD="password" --name th
 Based on:
 
 [theiaide](https://github.com/theia-ide/theia-apps/)
-[land007 repo](https://github.com/land007/docker_theia)
+
+and 
+
+
+[land007](https://github.com/land007/docker_theia)
 
