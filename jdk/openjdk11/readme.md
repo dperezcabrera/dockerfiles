@@ -1,4 +1,4 @@
-# OpenJdK11
+# OpenJdk-11
 
 ## Build:
 

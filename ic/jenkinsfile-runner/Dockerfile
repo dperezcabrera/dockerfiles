@@ -1,7 +1,7 @@
 ARG JENKINS_VERSION=alpine
 
 FROM jenkins/jenkins:${JENKINS_VERSION} AS builder
-LABEL maintainer="dperezcabrera@gmail.com"
+LABEL maintainer "dperezcabrera@gmail.com"
 
 USER root
 

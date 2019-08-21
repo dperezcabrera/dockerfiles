@@ -1,4 +1,4 @@
-# OpenJdK11 With Docker
+# OpenJdk-11 with Docker
 
 ## build:
 

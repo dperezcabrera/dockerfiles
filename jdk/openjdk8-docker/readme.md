@@ -1,4 +1,4 @@
-# OpenJdK8 With Docker
+# OpenJdk-8 With Docker
 
 ## Build:
 
