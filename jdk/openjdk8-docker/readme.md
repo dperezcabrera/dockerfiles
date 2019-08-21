@@ -1,13 +1,20 @@
+# OpenJdK8 With Docker
+
 ## Build:
 
 ```
 docker build -t dperezcabrera/openjdk8-docker .
 ```
 
+
 ## Usage:
 
 ```
-docker run -it --name from_host -v /var/run/docker.sock:/var/run/docker.sock dperezcabrera/openjdk8-docker docker run -it --name from_container dperezcabrera/openjdk8-docker java -version
+docker run -it --name from_host \ 
+	-v /var/run/docker.sock:/var/run/docker.sock \
+	dperezcabrera/openjdk8-docker \
+		docker run -it --name from_container dperezcabrera/openjdk8-docker \
+			java -version
 ```
 
 
@@ -18,6 +25,7 @@ openjdk version "1.8.0_212"
 OpenJDK Runtime Environment (IcedTea 3.12.0) (Alpine 8.212.04-r0)
 OpenJDK 64-Bit Server VM (build 25.212-b04, mixed mode)
 ```
+
 
 ## Containers:
 
