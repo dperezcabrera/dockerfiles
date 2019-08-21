@@ -1,0 +1,27 @@
+
+
+Wed Aug 21 11:30:04 2019
+Command line: TestDisk
+
+TestDisk 7.0, Data Recovery Utility, April 2015
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Linux, kernel 4.15.0-58-generic (#64-Ubuntu SMP Tue Aug 6 11:12:41 UTC 2019) x86_64
+Compiler: GCC 7.2
+ext2fs lib: 1.44.1, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.0
+/dev/sda: LBA, HPA, LBA48, DCO support
+/dev/sda: size       3907029168 sectors
+/dev/sda: user_max   3907029168 sectors
+/dev/sda: native_max 3907029168 sectors
+/dev/sdb: LBA, HPA, LBA48, DCO support
+/dev/sdb: size       488397168 sectors
+/dev/sdb: user_max   488397168 sectors
+/dev/sdb: native_max 488397168 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 2000 GB / 1863 GiB - CHS 243201 255 63, sector size=512 - ST2000DM001-1ER164, S/N:W4Z43CN8, FW:CC26
+Disk /dev/sdb - 250 GB / 232 GiB - CHS 30401 255 63, sector size=512 - Samsung SSD 850 EVO 250GB, S/N:S2R6NX0J414534N, FW:EMT02B6Q
+
+Partition table type (auto): Intel
+
+TestDisk exited normally.

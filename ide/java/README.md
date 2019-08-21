@@ -1,14 +1,14 @@
 ## build:
 
 ```
-docker build -t dperezcabrera/theia .
+docker build -t dperezcabrera/theia-java .
 ```
 
 
 ## Usage:
 
 ```
-docker run -it --rm -p 5050:5050 -e USERNAME="developer" -e PASSWORD="password" --name theia dperezcabrera/theia
+docker run -it --rm -p 5050:5050 -e USERNAME="developer" -e PASSWORD="password" --name theia dperezcabrera/theia-java
 ```
 
 
