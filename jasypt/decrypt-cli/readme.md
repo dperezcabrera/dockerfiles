@@ -15,7 +15,10 @@ docker build -t dperezcabrera/jasypt-decrypt-cli .
 ## Usage:
 
 ```
-docker run --rm -e MASTER_KEY="supersecret" -e ENCRYPTED_PASSWORD="4Egov2lOLJJXK+nEMg9ozg==" dperezcabrera/jasypt-decrypt-cli
+docker run --rm \
+	-e MASTER_KEY="supersecret" \
+	-e ENCRYPTED_PASSWORD="4Egov2lOLJJXK+nEMg9ozg==" \
+	dperezcabrera/jasypt-decrypt-cli
 ```
 
 ### Environment var
