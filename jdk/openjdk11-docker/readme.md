@@ -35,6 +35,5 @@ $ docker ps -a
 CONTAINER ID        IMAGE                             COMMAND                  CREATED              STATUS                          PORTS                              NAMES
 41fcdd3f359b        dperezcabrera/openjdk11-docker    "java -version"          About a minute ago   Exited (0) About a minute ago                                      from_container
 649f8421afae        dperezcabrera/openjdk11-docker    "docker run -it --na…"   About a minute ago   Exited (0) About a minute ago                                      from_host
-
 ```
 
