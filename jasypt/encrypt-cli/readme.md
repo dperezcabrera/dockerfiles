@@ -2,8 +2,6 @@
 
 ## Info:
 
-Based on:
-
 * [Documentation](http://www.jasypt.org/cli.html) 
 
 
@@ -22,9 +20,9 @@ docker run --rm -e MASTER_KEY="supersecret" -e INPUT_PASSWORD="secret" dperezcab
 
 ### Environment var
 
-ALGORITHM: The default value is *PBEWithMD5AndDES*.
-MASTER_KEY: This is the master key to encrypt input password.
-INPUT_PASSWORD: This is the input password to be encrypted.
+* ALGORITHM: The default value is *PBEWithMD5AndDES*.
+* MASTER_KEY: This is the master key to encrypt input password.
+* INPUT_PASSWORD: This is the input password to be encrypted.
 
 
 ## Output:
