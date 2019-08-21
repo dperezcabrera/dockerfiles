@@ -1,33 +1,41 @@
 # Jenkinsfile Runner
 
+## Info:
+
 [See official repo](https://github.com/jenkinsci/jenkinsfile-runner)
 
-## BUILD
-```
-docker build -t <image-name:version> .
-```
 
-custom jenkins version:
+## Build:
+
+Basic build: 
 
 ```
-docker build -t <image-name:version> --build-arg JENKINS_VERSION=alpine .
+docker build -t dperezcabrera/jenkinsfile-runner .
 ```
 
+Custom jenkins version:
 
-## EXECUTE
+```
+docker build -t dperezcabrera/jenkinsfile-runner --build-arg JENKINS_VERSION=alpine .
+```
+
+## Usage:
+
+Basic usage:
+
 ```
 docker run --rm \
 	--volume $PWD/Jenkinsfile-example:/workspace/Jenkinsfile \
-	<image-name:version> \
+	dperezcabrera/jenkinsfile-runner \
 	-a "param1=Hello" -a "param2=value2"
 ```
 
-with docker:
+With docker:
 
 ```
 docker run --rm \
 	--volume $PWD/Jenkinsfile:/workspace/Jenkinsfile \
 	--volume /var/run/docker.sock:/var/run/docker.sock \
-	<image-name:version>"
+	dperezcabrera/jenkinsfile-runner
 ```
 
