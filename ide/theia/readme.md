@@ -1,4 +1,4 @@
-## build:
+## Build:
 
 ```
 docker build -t dperezcabrera/theia .
