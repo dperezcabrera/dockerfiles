@@ -1,11 +1,11 @@
 #!/bin/bash
 
+export HOME=/home/$USER
 
 if [ ! -f $HOME/.vnc/passwd ] ; then
 
     echo "$USER:$PASSWORD" | chpasswd
-
-    # Set up vncserver
+    
     chown -R $USER:$USER $HOME
     su $USER -c "echo '$PASSWORD' | vncpasswd -f > $HOME/.vnc/passwd && chmod 600 $HOME/.vnc/passwd && touch $HOME/.Xresources"
 
@@ -25,5 +25,7 @@ else
     fi
 
 fi
+
+sed -i "s/%RESOLUTION%/$RESOLUTION/g" /etc/supervisor/conf.d/supervisor.conf
 
 /usr/bin/supervisord -n

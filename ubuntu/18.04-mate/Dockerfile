@@ -5,6 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV USER ubuntu
 ENV PASSWORD password
 ENV HOME /home/$USER
+ENV RESOLUTION 1600x900
 
 # Create new user for vnc login.
 RUN adduser $USER --disabled-password
@@ -44,6 +45,9 @@ ADD config/xstartup $HOME/.vnc/xstartup
 ADD config/dconf-full $HOME/dconf-full
 ADD config/supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 ADD config/startup.sh /opt/startup.sh
+
+RUN sed -i "s/%USER%/$USER/g" /etc/supervisor/conf.d/supervisor.conf && \
+    sed -i "s/%USER%/$USER/g" $HOME/.vnc/xstartup
 
 WORKDIR $HOME
 

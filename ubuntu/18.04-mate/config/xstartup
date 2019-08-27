@@ -3,7 +3,7 @@
 xrdb $HOME/.Xresources
 xsetroot -solid grey
 export XKL_XMODMAP_DISABLE=1
-dconf load / < /home/ubuntu/dconf-full
-rm /home/ubuntu/dconf-full
+dconf load / < /home/%USER%/dconf-full
+rm /home/%USER%/dconf-full
 /etc/X11/Xsession
 
