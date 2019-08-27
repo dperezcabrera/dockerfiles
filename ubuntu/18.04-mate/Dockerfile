@@ -32,7 +32,7 @@ RUN apt-get update \
     && apt-get clean \
     && apt-get autoclean \
     && apt-get autoremove \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* /usr/share/icons/Contras*  /usr/share/icons/Humanity-Dark /usr/share/icons/menta /usr/share/icons/mate* /usr/share/icons/Fog /usr/share/icons/Quid
 
 RUN mkdir -p /opt/ngrok && \
     git clone https://github.com/novnc/noVNC.git /opt/noVNC && \
