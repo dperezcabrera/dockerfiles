@@ -5,7 +5,7 @@ LABEL maintainer "dperezcabrera@gmail.com"
 
 USER root
 
-ENV JENKINSFILE_RUNNER_VERSION="1.0-beta-9"
+ENV JENKINSFILE_RUNNER_VERSION="1.0-beta-11"
 
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
