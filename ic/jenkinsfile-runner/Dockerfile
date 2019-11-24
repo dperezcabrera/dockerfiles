@@ -12,7 +12,7 @@ RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 
 ADD https://repo.jenkins-ci.org/releases/io/jenkins/jenkinsfile-runner/jenkinsfile-runner/$JENKINSFILE_RUNNER_VERSION/jenkinsfile-runner-$JENKINSFILE_RUNNER_VERSION.zip /
 
-RUN unzip jenkinsfile-runner-$JENKINSFILE_RUNNER_VERSION-app.zip -d app \
+RUN unzip jenkinsfile-runner-$JENKINSFILE_RUNNER_VERSION.zip -d app \
 	&& chmod +x /app/bin/jenkinsfile-runner \
 	&& mkdir /jenkins-war \
 	&& unzip /usr/share/jenkins/jenkins.war -d /jenkins-war \
