@@ -25,8 +25,8 @@ docker build -t dperezcabrera/jenkins --build-arg JENKINS_VERSION=alpine .
 ```
 docker run --rm -it \
         --name jenkins-alpine \
-        --publish 8080=8080 \
-        --publish 50000=50000 \
+        --publish 8080:8080 \
+        --publish 50000:50000 \
         --volume /var/run/docker.sock:/var/run/docker.sock \
         dperezcabrera/jenkins
 ```

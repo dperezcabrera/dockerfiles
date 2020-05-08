@@ -113,4 +113,5 @@ basic-branch-build-strategies
 embeddable-build-status
 parameterized-scheduler
 generic-webhook-trigger
+job-dsl
 
